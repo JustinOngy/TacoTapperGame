@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taco Tapper Game</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./Counter.js"></script>
+  </head>
+
+  <body>
+    <h1>Taco Tapper</h1>
+
+    <div class="sectionLeft">
+      <center>
+        <div class="scoreContainer unselectable">
+          <p><span id="score">0</span> tacos</p>
+          <span id="tacospersecond">0</span> tacos per second
+        </div>
+        <div class="img--wrapper">
+          <img
+            class="taco--img unselectable"
+            src="./images/taco.png"
+            alt=""
+            onclick="addToScore(clickingPower)" />
+        </div>
+      </center>
+    </div>
+
+    <div class="sectionRight">
+      <div class="buyStation--wrapper">
+        <h1>Upgrades</h1>
+        <table class="shopButton unselectable" onclick="buyCursor()">
+          <tr>
+            <td id="image"><img src="./images/clicker.png" alt="" /></td>
+            <td id="nameAndCost">
+              <p>Cursor</p>
+              <p><span id="cursorcost">15</span> tacos</p>
+            </td>
+            <td id="amount"><span id="cursors">0</span></td>
+          </tr>
+        </table>
+        <table class="shopButton unselectable" onclick="buyGrandma()">
+          <tr>
+            <td id="image"><img src="./images/grandma.png" alt="" /></td>
+            <td id="nameAndCost">
+              <p>Grandma</p>
+              <p><span id="grandmacost">100</span> tacos</p>
+            </td>
+            <td id="amount"><span id="grandmas">0</span></td>
+          </tr>
+        </table>
+        <table class="shopButton unselectable" onclick="buyShop()">
+          <tr>
+            <td id="image"><img src="./images/taco shop.png" alt="" /></td>
+            <td id="nameAndCost">
+              <p>Shop</p>
+              <p><span id="shopcost">500</span> tacos</p>
+            </td>
+            <td id="amount"><span id="shops">0</span></td>
+          </tr>
+        </table>
+        <table class="shopButton unselectable" onclick="buyFactory()">
+          <tr>
+            <td id="image"><img src="./images/factory.png" alt="" /></td>
+            <td id="nameAndCost">
+              <p>Factory</p>
+              <p><span id="factorycost">1000</span> tacos</p>
+            </td>
+            <td id="amount"><span id="factory">0</span></td>
+          </tr>
+        </table>
+        <table class="shopButton unselectable" onclick="give9999()">
+          <tr>
+            <td id="image"><img src="./images/heart.png" alt="" /></td>
+            <td id="nameAndCost">
+              <p>Give 9999</p>
+              <p><span id="cursorcost">Free</span> tacos</p>
+            </td>
+            <td id="amount"><span id="cursors">X</span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="footer"><h1>Taco Tapper by Justin Ong</h1></div>
+  </body>
+</html>
+<!-- 
+  <button onclick="buyCursor()">
+          Cursor [<span id="cursorcost">15</span>] --
+          <span id="cursors">0</span>
+        </button>
+
+        <button onclick="buyGrandma()">
+          Grandma [<span id="grandmacost">100</span>] --
+          <span id="grandmas">0</span>
+        </button>
+
+        <button onclick="buyShop()">
+          Shop [<span id="shopcost">500</span>] -- <span id="shops">0</span>
+        </button>
+        <button onclick="buyFactory()">
+          Factory [<span id="factorycost">1000</span>] --
+          <span id="factory">0</span>
+        </button>
+        <button onclick="give1000()">Give 1000</button>
+ -->

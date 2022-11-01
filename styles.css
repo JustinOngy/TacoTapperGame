@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Paytone+One&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  cursor: pointer;
+}
+
+.h1 {
+  font-family: Paytone -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/*  */
+
+.sectionLeft {
+  float: left;
+  width: 80%;
+}
+
+.sectionRight {
+  float: right;
+  width: 20%;
+}
+
+.scoreContainer {
+  background-color: #fccd04;
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+/* 
+#A64AC9 - purple
+#fccd04- orange
+#ffb48f pale orange 
+#f5e6cc grey orange
+#17e9e0 turquoise
+*/
+
+.taco--img:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.taco--img:active {
+  transform: scale(0.93);
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+/* 
+.buyStation--wrapper {
+  background-color: #a64ac9;
+  padding: 10px;
+  border-radius: 10px;
+} */
+
+.shopButton {
+  background-color: #b5b5b5;
+  transition: all 0.2s ease-in-out;
+  border-radius: 10px;
+  margin: 10px 0 10px 0;
+}
+
+.shopButton:hover {
+  background-color: #c7c7c7;
+  transition: all 0.2s ease-in-out;
+}
+
+.shopButton #image {
+  width: 25%;
+}
+.shopButton img {
+  height: 64px;
+  width: 64px;
+}
+
+.shopButton #nameAndCost p {
+  margin: 0px;
+  width: 60%;
+}
+
+.shopButton #nameAndCost p:first-of-type {
+  font-size: 24px;
+}
+
+.shopButton #amount {
+  font-size: 48px;
+  color: #595959;
+  font-family: Roboto;
+  width: 15%;
+}
+
+.unselectable {
+  user-select: none;
+}
+
+.footer {
+  margin-top: 75%;
+}
+
+#gamepage {
+  background-color: #595959;
+}
